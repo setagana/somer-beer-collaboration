@@ -6,7 +6,7 @@
     game: Phaser.Game;
 
     preload() {
-        this.game.load.image('logo', 'src/assets/Placeholder.png');
+        this.game.load.image('logo', 'src/assets/somerbeer.jpg');
     }
 
     create() {
