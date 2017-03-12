@@ -1,7 +1,7 @@
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: "./src/app.ts",
     output: {
-        filename: "bundle.js",
+        filename: "app.js",
         path: __dirname + "/dist"
     },
 
@@ -13,13 +13,9 @@ module.exports = {
 
     module: {
         rules: [
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+            { test: /\.ts?$/, loader: "awesome-typescript-loader" },
             { test: /\.js$/, enforce: "pre", loader: "source-map-loader" }
         ]
     },
 
-    externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    },
 };
