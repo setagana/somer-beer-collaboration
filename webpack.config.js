@@ -17,6 +17,5 @@ module.exports = {
             { test: /\.js$/, enforce: "pre", loader: "source-map-loader" }
         ]
     },
-/*Hello from Murray's Mac*/
 
 };
